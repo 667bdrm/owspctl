@@ -6,7 +6,7 @@ using native binary mobile interface communication CPlayer+  compatible protocol
 
 ## Usage
 
-owspctl.pl --user username --pass password --host 192.168.0.1 --port 15961 --command <command> [--of <video output file>] [ --frames <number of frames> ]
+owspctl.pl --user username --pass password --host 192.168.0.1 --port 15961 --command command [--of video_output_file ] [ --frames number_of_frames ]
 
 supported commands:
 
