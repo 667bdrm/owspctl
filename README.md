@@ -18,7 +18,7 @@ get_config_network | display network settings
 
 ## Tested hardware
 
-NGSPtech 16ch NVR (probably HiSilicon Hi3511, dvr firmware version az5bixg.0309.0.4.1.30326)
+DN8416 16ch H264 DVR (SHENZHEN Xinshijia Technologies CO., LTD., http://szxsj.net.cn/cn/, probably HiSilicon Hi3511, dvr firmware version az5bixg.0309.0.4.1.30326)
 
 ## Author and License
 
