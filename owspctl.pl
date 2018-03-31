@@ -2,9 +2,8 @@
 
 # owspctl
 #
-# owspctl is an open source cross-platform tool and framework to control China H264 NVR
-# using native binary mobile interface communication CPlayer+  compatible protocol (default port 15961)
-# (https://play.google.com/store/apps/details?id=cplayerAdd.com) called internally OWSP
+# owspctl is an open source cross-platform tool and framework to control Xinshijia H264 DVR over owsp compatible protocol 
+# (CPlayer+, default port 15961, https://play.google.com/store/apps/details?id=cplayerAdd.com)
 #
 ## Usage
 #
@@ -18,7 +17,7 @@
 #
 ## Tested hardware
 #
-# NGSPtech 16ch NVR (probably HiSilicon Hi3511)
+# XSJ DN8416 16ch H264 DVR (SHENZHEN Xinshijia Technologies CO., LTD., http://szxsj.net.cn/en/, HiSilicon Hi3520A,firmware version az5bixg.0309.0.4.1.30326)
 #
 ## Author and License
 
