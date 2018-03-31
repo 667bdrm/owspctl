@@ -10,7 +10,7 @@ seq:
     doc: >
         port 15961
         CPlayer+ android application
-        16ch H264 DVR "NGSPtech"
+        Tested with 16ch Xinshijia DN8416
 types:
   owsp_packet:
     seq:
