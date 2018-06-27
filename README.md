@@ -1,7 +1,7 @@
 # owspctl
 
 owspctl is an open source cross-platform tool and framework to control Xinshijia H264 DVR over
-owsp compatible protocol (CPlayer+, default port 15961, https://play.google.com/store/apps/details?id=cplayerAdd.com)
+owsp compatible protocol (CPlayer+, default port 15961, https://play.google.com/store/apps/details?id=cplayerAdd.com - not available now)
 
 ## Usage
 
