@@ -17,7 +17,7 @@ get_config_network | display network settings
 
 ## Tested hardware
 
-XSJ DN8416 16ch H264 DVR (SHENZHEN Xinshijia Technologies CO., LTD., HiSilicon Hi3520A,firmware version az5bixg.0309.0.4.1.30326)
+XSJ DN8416 16ch H264 DVR (SHENZHEN Xinshijia Technologies CO., LTD., HiSilicon Hi3520A, firmware version 8416_v1.0_121122 az5bixg.0309.0.4.1.30326)
 
 ## Author and License
 
