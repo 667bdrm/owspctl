@@ -18,6 +18,7 @@ get_config_network | display network settings
 Example:
 
 $ owspctl.pl --user admin --pass test --port 15961 --host 192.168.0.1 --command video --of test.h264 --frames 30 --channel 0
+
 $ ffmpeg -i test.h264  -frames 1 -ss 0.5 -f image2 -qscale:v 2 test_%03d.jpg
 
 ## Tested hardware
