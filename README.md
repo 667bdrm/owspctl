@@ -15,6 +15,11 @@ video | download h264 video stream data (could be decoded by ffmpeg)
 get_config_system | display system settings
 get_config_network | display network settings
 
+Example:
+
+$ owspctl.pl --user admin --pass test --port 15961 --host 192.168.0.1 --command video --of test.h264 --frames 30 --channel 0
+$ ffmpeg -i test.h264  -frames 1 -ss 0.5 -f image2 -qscale:v 2 test_%03d.jpg
+
 ## Tested hardware
 
 XSJ DN8416 16ch H264 DVR (SHENZHEN Xinshijia Technologies CO., LTD., HiSilicon Hi3520A, firmware version 8416_v1.0_121122 az5bixg.0309.0.4.1.30326)
