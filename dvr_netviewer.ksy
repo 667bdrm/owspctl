@@ -59,6 +59,7 @@ types:
             'command_codes::search_resp': generic_resp
             'command_codes::system_info': system_info
             'command_codes::get_settings_resp': netviewer_settings
+            'command_codes::save_config': netviewer_settings
             _: generic_resp
 
       
