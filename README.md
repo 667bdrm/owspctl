@@ -25,9 +25,14 @@ $ ffmpeg -i test.h264  -frames 1 -ss 0.5 -f image2 -qscale:v 2 test_%03d.jpg
 
 XSJ DN8416 16ch H264 DVR (SHENZHEN Xinshijia Technologies CO., LTD., HiSilicon Hi3520A, firmware version 8416_v1.0_121122 rootfs_dn8316_v0402 az5bixg.0309.0.4.1.30326)
 
+## Help needed
+
+If you have NetViewer app compatible NVR, firmware dump, source code, know someone who sell it, please let me know. My last device died after years of operation and research so I have no equipment to continue development that tool.
+
+
 ## Author and License
 
-Copyright (C) 2018 667bdrm
+Copyright (C) 2018-2020 667bdrm
 Dual licensed under GNU General Public License 2 and commercial license
 Commercial license available by request
 
