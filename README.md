@@ -23,7 +23,7 @@ $ ffmpeg -i test.h264  -frames 1 -ss 0.5 -f image2 -qscale:v 2 test_%03d.jpg
 
 ## Tested hardware
 
-XSJ DN8416 16ch H264 DVR (SHENZHEN Xinshijia Technologies CO., LTD., HiSilicon Hi3520A, firmware version 8416_v1.0_121122 az5bixg.0309.0.4.1.30326)
+XSJ DN8416 16ch H264 DVR (SHENZHEN Xinshijia Technologies CO., LTD., HiSilicon Hi3520A, firmware version 8416_v1.0_121122 rootfs_dn8316_v0402 az5bixg.0309.0.4.1.30326)
 
 ## Author and License
 
