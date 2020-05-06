@@ -263,27 +263,60 @@ types:
       - id: secondary_dns
         type: u4
       - id: unknown3
-        size: 1749
+        size: 1475
+      - id: email_enable
+        type: u1
+        enum: on_off_switch
+      - id: smtp_ssl
+        type: u1
+        enum: on_off_switch
+      - id: smtp_port
+        type: u2le
+      - id: smtp_server
+        type: strz
+        encoding: ASCII
+        size: 51
+      - id: email_sender
+        type: strz
+        encoding: ASCII
+        size: 51
+      - id: smtp_password
+        type: strz
+        encoding: ASCII
+        size: 51
+      - id: email_receiver
+        type: str
+        size: 50
+        encoding: ASCII
+      - id: unknown4
+        size: 65
+      - id: ftp_capture_timing
+        type: u1
+      - id: unknown5
+        size: 1
       - id: ftp_server
         type: strz
         encoding: ASCII
-        size: 30
-      - id: unknown4
-        size: 20
+        size: 50
       - id: ftp_port
         type: u2le
       - id: ftp_username
         type: strz
         encoding: ASCII
-        size: 30
-      - id: unknown5
-        size: 20
+        size: 50
       - id: ftp_password
         type: strz
         encoding: ASCII
-        size: 30
-      - id: unknown6
-        size: 479
+        size: 50
+      - id: ftp_anonymity
+        type: u1
+        enum: on_off_switch
+      - id: frp_remote_directory
+        type: strz
+        encoding: ASCII
+        size: 50
+      - id: unknown7
+        size: 408
         
   channel_settings:
     seq:
