@@ -246,7 +246,11 @@ types:
         type: u1
         enum: time_setup
       - id: unknown4
-        size: 5
+        size: 2
+      - id: spot_rot_mode
+        type: u1
+      - id: unknown5
+        size: 2
       - id: firmware_version
         size: 32
         type: strz
@@ -270,7 +274,7 @@ types:
         type: u1
       - id: abnormity_no_hdd
         type: u1
-      - id: unknown5
+      - id: unknown6
         size: 2
       - id: reboot
         type: u1
@@ -337,7 +341,7 @@ types:
         type: strz
         encoding: ASCII
         size: 65
-      - id: unknown6
+      - id: unknown7
         size: 260
       - id: user_dyndns
         type: strz
@@ -363,7 +367,7 @@ types:
         type: strz
         encoding: ASCII
         size: 65
-      - id: unknown7
+      - id: unknown8
         size: 260
       - id: password_dyndns
         type: strz
@@ -389,7 +393,7 @@ types:
         type: strz
         encoding: ASCII
         size: 17
-      - id: unknown8
+      - id: unknown9
         size: 72
       - id: email_enable
         type: u1
@@ -415,19 +419,19 @@ types:
         type: str
         size: 50
         encoding: ASCII
-      - id: unknown9
+      - id: unknown10
         size: 56
       - id: ftp_channel_enabled
         type: u2
         enum: channel_enabled
-      - id: unknown10
+      - id: unknown11
         size: 6
       - id: ftp_settings
         type: u1
         enum: ftp_settings
       - id: ftp_capture_timing
         type: u1
-      - id: unknown11
+      - id: unknown12
         size: 1
       - id: ftp_server
         type: strz
@@ -450,8 +454,27 @@ types:
         type: strz
         encoding: ASCII
         size: 50
-      - id: unknown12
-        size: 408
+      - id: hdd_parameters
+        type: hdd_parameters
+        repeat: expr
+        repeat-expr: 8
+
+        
+  hdd_parameters:
+    seq:
+      - id: unknown
+        size: 33
+      - id: overwrite
+        type: u1
+        enum: on_off_switch
+      - id: unknown1
+        size: 5
+      - id: size1
+        type: u4le
+      - id: unknown3
+        size: 4
+      - id: size2
+        type: u4le
         
   sensor_settings:
     seq:
