@@ -733,6 +733,7 @@ enums:
     42: pelcod0
 
   ptz_commands:
+    0x1100: unknown_x1100
     0x1001: audio_on
     0x1101: audio_off
     0x1104: unknown_x1104
