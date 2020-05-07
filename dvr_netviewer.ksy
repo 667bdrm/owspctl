@@ -225,7 +225,28 @@ types:
   netviewer_settings:
     seq:
       - id: unknown
-        size: 39
+        size: 16
+      - id: tv_standard
+        type: u1
+        enum: tv_standard
+      - id: display_resolution
+        type: u1
+        enum: display_resolutions
+      - id: unknown2
+        size: 10
+      - id: language
+        type: u1
+        enum: languages
+      - id: log_settings
+        type: u1
+        enum: log_settings
+      - id: unknown3
+        size: 3
+      - id: time_setup
+        type: u1
+        enum: time_setup
+      - id: unknown4
+        size: 5
       - id: firmware_version
         size: 32
         type: strz
@@ -237,8 +258,35 @@ types:
         repeat-expr: 17
         doc: >
           last channel - all channel common settings
-      - id: unknown2
-        size: 57
+      - id: sensor_settings
+        type: sensor_settings
+        repeat: expr
+        repeat-expr: 9
+      - id: abnormity_hdd_loss
+        type: u1
+      - id: abnormity_video_loss
+        type: u1
+      - id: abnormity_hdd_full
+        type: u1
+      - id: abnormity_no_hdd
+        type: u1
+      - id: unknown5
+        size: 2
+      - id: reboot
+        type: u1
+        enum: on_off_switch
+      - id: reboot_interval
+        type: u1
+        enum: reboot_intervals
+      - id: reboot_month
+        type: u1
+      - id: reboot_weekday
+        type: u1
+        enum: weekdays
+      - id: reboot_hours
+        type: u1
+      - id: reboot_minutes
+        type: u1
       - id: ip_mode
         type: u1
         enum: ip_modes
@@ -262,8 +310,87 @@ types:
         type: u4
       - id: secondary_dns
         type: u4
-      - id: unknown3
-        size: 1475
+      - id: ddns_provider
+        type: u1
+        enum: ddns_provider
+      - id: domain_dyndns
+        type: strz
+        encoding: ASCII
+        size: 65
+      - id: domain_3322
+        type: strz
+        encoding: ASCII
+        size: 65
+      - id: domain_perfecteyes
+        type: strz
+        encoding: ASCII
+        size: 65
+      - id: domain_myqsee
+        type: strz
+        encoding: ASCII
+        size: 65
+      - id: domain_dvrddns
+        type: strz
+        encoding: ASCII
+        size: 65
+      - id: domain_noip
+        type: strz
+        encoding: ASCII
+        size: 65
+      - id: unknown6
+        size: 260
+      - id: user_dyndns
+        type: strz
+        encoding: ASCII
+        size: 65
+      - id: user_3322
+        type: strz
+        encoding: ASCII
+        size: 65
+      - id: user_perfecteyes
+        type: strz
+        encoding: ASCII
+        size: 65
+      - id: user_myqsee
+        type: strz
+        encoding: ASCII
+        size: 65
+      - id: user_dvrddns
+        type: strz
+        encoding: ASCII
+        size: 65
+      - id: user_noip
+        type: strz
+        encoding: ASCII
+        size: 65
+      - id: unknown7
+        size: 260
+      - id: password_dyndns
+        type: strz
+        encoding: ASCII
+        size: 17
+      - id: password_3322
+        type: strz
+        encoding: ASCII
+        size: 17
+      - id: password_perfecteyes
+        type: strz
+        encoding: ASCII
+        size: 17
+      - id: password_myqsee
+        type: strz
+        encoding: ASCII
+        size: 17
+      - id: password_dvrddns
+        type: strz
+        encoding: ASCII
+        size: 17
+      - id: password_noip
+        type: strz
+        encoding: ASCII
+        size: 17
+      - id: unknown8
+        size: 72
       - id: email_enable
         type: u1
         enum: on_off_switch
@@ -288,11 +415,19 @@ types:
         type: str
         size: 50
         encoding: ASCII
-      - id: unknown4
-        size: 65
+      - id: unknown9
+        size: 56
+      - id: ftp_channel_enabled
+        type: u2
+        enum: channel_enabled
+      - id: unknown10
+        size: 6
+      - id: ftp_settings
+        type: u1
+        enum: ftp_settings
       - id: ftp_capture_timing
         type: u1
-      - id: unknown5
+      - id: unknown11
         size: 1
       - id: ftp_server
         type: strz
@@ -315,8 +450,23 @@ types:
         type: strz
         encoding: ASCII
         size: 50
-      - id: unknown7
+      - id: unknown12
         size: 408
+        
+  sensor_settings:
+    seq:
+      - id: enabled
+        type: u1
+        enum: on_off_switch
+      - id: sensor_id
+        type: u1
+      - id: contact_mode
+        type: u1
+        enum: sensor_contact_mode
+      - id: buzzer_time
+        type: u1
+      - id: alarm_time
+        type: u1
         
   channel_settings:
     seq:
@@ -577,7 +727,106 @@ enums:
   ip_modes:
     1: static
     2: dhcp
-
+    
+  ftp_settings:
+    0x02: motion_on
+    0x04: sensor_on
+  
+  channel_enabled:
+    0x0100: channel_1
+    0x0200: channel_2
+    0x0400: channel_3
+    0x0800: channel_4
+    0x1000: channel_5
+    0x2000: channel_6
+    0x4000: channel_7
+    0x8000: channel_8
+    0x0001: channel_9
+    0x0002: channel_10
+    0x0004: channel_11
+    0x0008: channel_12
+    0x0010: channel_13
+    0x0020: channel_14
+    0x0040: channel_15
+    0x0080: channel_16
+  
+  ddns_provider:
+    1: dyndns
+    2: ddns_3322
+    3: perfecteyes
+    4: myqsee
+    5: dvrddns
+    6: noip
+  
+  sensor_contact_mode:
+    0: normal_open
+    1: normal_close
+    
+  reboot_intervals:
+    1: every_month
+    2: every_week
+    3: every_day
+    
+  weekdays:
+    0: sunday
+    1: monday
+    2: tuesday
+    3: wednesday
+    4: thursday
+    5: friday
+    6: saturday
+    
+  log_settings:
+    0x01: motion
+    0x02: sensor
+    0x08: booting_shutdown
+    0x10: network
+    
+  time_setup:
+    0: us
+    1: asia
+    2: euro
+  
+  languages:
+    0: english
+    1: chinese
+    2: russian
+    3: french
+    4: italian
+    5: german
+    6: spanish
+    7: portuguese
+    8: turkish
+    9: thai
+    10: hebrew
+    11: greek
+    12: vietnamise
+    13: bulgaria
+    14: czech
+    15: danish
+    16: dutch
+    17: finnish
+    18: hungary
+    19: indonesia
+    20: lithuania
+    21: norway
+    22: persian
+    23: polish
+    24: swedish
+    
+  display_resolutions:
+    0: res_1024_768
+    1: res_1280_1024
+    2: res_1280_720
+    3: res_1360_768
+    4: res_1440_900
+    5: res_1920_1080
+    
+  tv_standard:
+    0: ntsc
+    1: pal
+    
+  
   command_codes:
     0x0200: login
     0x0201: login_resp
@@ -636,6 +885,7 @@ enums:
   streams:
     0x00: main_stream
     0x01: sub_stream
+    
     
   protocols:
     0x5471: proto_netviewer
