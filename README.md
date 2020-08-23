@@ -21,8 +21,9 @@ $ owspctl.pl --user admin --pass test --port 15961 --host 192.168.0.1 --command 
 
 $ ffmpeg -i test.h264  -frames 1 -ss 0.5 -f image2 -qscale:v 2 test_%03d.jpg
 
+# nvserver
 
-nvserver.pl -  This tool emulates NetViewer_Dn.exe XSJ DVR control app server (default tcp port 9000) for testing dvr control app or develop alternative version
+This tool emulates NetViewer_Dn.exe XSJ DVR control app server (default tcp port 9000) for testing dvr control app or develop alternative version. Generated bin files could be used with Kaitai ide (ide.kaitai.io) for packet structure analysis.
 
 Usage: ./nvserver.pl --user test --port 9000
 
