@@ -21,6 +21,14 @@ $ owspctl.pl --user admin --pass test --port 15961 --host 192.168.0.1 --command 
 
 $ ffmpeg -i test.h264  -frames 1 -ss 0.5 -f image2 -qscale:v 2 test_%03d.jpg
 
+
+nvserver.pl -  This tool emulates NetViewer_Dn.exe XSJ DVR control app server (default tcp port 9000) for testing dvr control app or develop alternative version
+
+Usage: ./nvserver.pl --user test --port 9000
+
+Connect original app to 127.0.0.1:9000, use any login/password pair
+
+
 ## Tested hardware
 
 XSJ DN8416 16ch H264 DVR (SHENZHEN Xinshijia Technologies CO., LTD., HiSilicon Hi3520A, firmware version 8416_v1.0_121122 rootfs_dn8316_v0402 az5bixg.0309.0.4.1.30326)
