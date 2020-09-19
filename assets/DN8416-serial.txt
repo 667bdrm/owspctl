@@ -1,0 +1,47 @@
+[engine/network/network_main.c:3725] OK NET PORT(TCP:9000/0)
+[engine/network/network_main.c:1582] OK MOBILE PORT(TCP:15961/0)
+[engine/network/network_main.c:1597] OK HTTP WEB PORT(TCP:90/0)
+===========================================
+net_thread_main loop : 904          
+===========================================
+[email.c:825]Email Stop, since not Enable or Email Setup Error!
+[ftp.c:379]FTP Start
+[ftp.c:277]FTP Server name err:weblead.net
+[ftp.c:770]FTP Login failed!
+[ftp.c:647]FTP Logout!
+===========================================
+Timer Handler loop : 904      
+===========================================
+===========================================
+                                                                                                                                                                               StartDVR loop : 904           
+===========================================
+[engine/record/record_thread.c:498] =========> force flush by no record!
+[ftp.c:277]FTP Server name err:ftp.idsoftware.com
+[ftp.c:770]FTP Login failed!
+[ftp.c:647]FTP Logout!
+[ftp.c:277]FTP Server name err:ftp.idsoftware.com
+[ftp.c:770]FTP Login failed!
+[ftp.c:647]FTP Logout!
+Sending discover...
+Sending select for 192.168.1.10...
+Lease of 192.168.1.10 obtained, lease time 600
+deleting routers
+route: SIOCDELRT: No such process
+adding dns 192.168.1.1
+
+process '/sbin/getty /dev/ttyS000 115200' (pid 905) exited. Scheduling for restart.
+starting pid 1003, tty '/dev/ttyS000': '/sbin/getty /dev/ttyS000 115200'
+(none) login: 
+
+Lease of 192.168.1.10 obtained, lease time 600
+deleting routers
+route: SIOCDELRT: No such process
+adding dns 192.168.1.1
+
+process '/sbin/getty /dev/ttyS000 115200' (pid 905) exited. Scheduling for restart.
+starting pid 1003, tty '/dev/ttyS000': '/sbin/getty /dev/ttyS000 115200'
+(none) login: \
+[engine/network/network_main.c:3063]ERROR INIT SERVER SEND SOCK
+
+
+
