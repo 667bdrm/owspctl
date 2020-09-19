@@ -1,0 +1,675 @@
+(none) login:[h264en : Queue Stop]
+[h264en : Queue Start]
+ata2: exception Emask 0x10 SAct 0x0 SErr 0x10000 action 0xe frozen
+ata2: irq_stat 0x00400000, PHY RDY changed
+ata2: SError:� 
+
+
+U-Boot 2010.06 (Jan 24 2013 - 01:17:23)
+
+DRAM:  256 MiB
+NAND:  Special Nand id table Version 1.35
+Nand ID: 0x01 0x01 0x01 0x01 0x01 0x01 0x01 0x01
+Nand(Hardware): Block:16KB Page:2KB Chip:128MB*2 OOB:64B ECC:1bit 
+256 MiB
+Check spi flash controller v300. found
+Spi(cs1) ID: 0xC2 0x20 0x18 0xC2 0x20 0x18
+Spi(cs1): Block:64KB Chip:16MB Name:"MX25L128"
+*** Warning - bad CRC, using default environment
+
+In:serial
+Out:   serial
+Err:   serial
+judge ddr init
+user init finish.
+Hit key to stop autoboot:  0 
+16384 KiB hi_sfc at 0:0 is now current device
+
+norm:0 upg:0
+mmu_enable
+<<imgwidth=720, imgheight=576, linebytes=1440>>
+decode success!!!!
+## Booting kernel from Legacy Image at 82000000 ...
+   Image Name:   Linux-3.0.8
+   Image Type:   ARM Linux Kernel Image (uncompressed)
+   Data Size:3073440 Bytes = 2.9 MiB
+   Load Address: 80008000
+   Entry Point:  80008000
+   Loading Kernel Image ... OK
+OK
+
+Starting kernel ...
+
+Uncompressing Linux... done, booting the kernel.
+Linux version 3.0.8 (root@debian) (gcc version 4.4.1 (Hisilicon_v100(gcc4.4-290+uclibc_0.9.32.1+eabi+linuxpthread)) ) #7 Thu Jan 24 03:50:23 EST 2013
+XSJ_Version:xsjkernel_v4.0a_101
+CPU: ARMv7 Processor[413fc090] revision 0 (ARMv7), cr=10c53c7f
+CPU: VIPT nonaliasing data cache, VIPT aliasing instruction cache
+Machine: godarm
+Memory policy: ECC disabled, Data cache writeback
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 20320
+PID hash table entries: 512 (order: -1, 2048 bytes)
+Dentry cache hash table entries: 16384 (order: 4, 65536 bytes)
+Inode-cache hash table entries: 8192 (order: 3, 32768 bytes)
+Memory: 80MB = 80MB total
+Memory: 75032k/75032k available, 6888k reserved, 0K highmem
+Virtual kernel memory layout:
+vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+DMA: 0xffc00000 - 0xffe00000   (   2 MB)
+vmalloc : 0xc5800000 - 0xfe000000   ( 904 MB)
+lowmem  : 0xc0000000 - 0xc5000000   (  80 MB)
+modules : 0xbf000000 - 0xc0000000   (  16 MB)
+ .init : 0xc0008000 - 0xc002b000   ( 140 kB)
+ .text : 0xc002b000 - 0xc0578000   (5428 kB)
+ .data : 0xc0578000 - 0xc059a080   ( 137 kB)
+.bss : 0xc059a0a4 - 0xc05f5290   ( 365 kB)
+SLUB: Genslabs=13, HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+NR_IRQS:128 nr_irqs:128 128
+sched_clock: 32 bits at 155MHz, resolution 6ns, wraps every 27709ms
+Console: colour dummy device 80x30
+Calibrating delay loop... 1849.75 BogoMIPS (lpj=9248768)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 512
+CPU: Testing write buffer coherency: ok
+NET: Registered protocol family 16
+Serial: AMBA PL011 UART driver
+uart:0: ttyAMA0 at MMIO 0x20080000 (irq = 40) is a PL011 rev2
+console[ttyAMA0] enabled
+uart:1: ttyAMA1 at MMIO 0x20090000 (irq = 41) is a PL011 rev2
+uart:3: ttyAMA2 at MMIO 0x200b0000 (irq = 43) is a PL011 rev2
+bio: create slab <bio-0> at 0
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+cfg80211: Calling CRDA to update world regulatory domain
+Switching to clocksource timer1
+NET: Registered protocol family 2
+IP route cache hash table entries: 1024 (order: 0, 4096 bytes)
+TCP established hash table entries: 4096 (order: 3, 32768 bytes)
+TCP bind hash table entries: 4096 (order: 2, 16384 bytes)
+TCP: Hash tables configured (established 4096 bind 4096)
+TCP reno registered
+UDP hash table entries: 256 (order: 0, 4096 bytes)
+UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+NET: Registered protocol family 1
+RPC: Registered named UNIX socket transport module.
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+RPC: Registered tcp NFSv4.1 backchannel transport module.
+NetWinder Floating Point Emulator V0.97 (double precision)
+L2cache cache controller enabled
+VFS: Disk quotas dquot_6.5.2
+Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+NTFS driver 2.1.30[Flags: R/W].
+JFFS2 version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
+fuse init (API version 7.16)
+msgmni has been set to 146
+Block layer SCSI generic (bsg) driver version 0.4 loaded (major 254)
+io scheduler noop registered
+io scheduler cfq registered (default)
+HDLC line discipline maxframe=4096
+N_HDLC line discipline registered.
+brd: module loaded
+loop: module loaded
+ahci: SSS flag set, parallel bus scan disabled
+ahci ahci.0: AHCI 0001.0200 32 slots 2 ports 3 Gbps 0x3 impl platform mode
+ahci ahci.0: flags: ncq sntf stag pm led clo only pmp pio slum part ccc sxs boh 
+scsi0 : ahci_platform
+scsi1 : ahci_platform
+ata1: SATA max UDMA/133 mmio[mem 0x10080000-0x1008ffff] port 0x100 irq 68
+ata2: SATA max UDMA/133 mmio[mem 0x10080000-0x1008ffff] port 0x180 irq 68
+Spi id table Version 1.22
+Hisilicon Spi Flash Controller V300 New Device Driver, Version 1.10
+Check Spi Flash Controller V300 New. 
+Found
+Spi(cs1) ID: 0xC2 0x20 0x18 0xC2 0x20 0x18
+Spi(cs1): 
+Block:64KB 
+Chip:16MB 
+Name:"MX25L128"
+spi size: 0x16777216
+chip num: 1
+6 cmdlinepart partitions found on MTD device hi_sfc
+Special nand id table Version 1.35
+Hisilicon Nand Flash Controller V301 Device Driver, Version 1.10
+Nand ID: 0x01 0x01 0x01 0x01 0x01 0x01 0x01 0x01
+Nand(Hardware): Block:16KB Page:2KB Chip:128MB OOB:64B ECC:1bit 
+NAND device: Manufacturer ID: 0x01, Chip ID: 0x01 (AMD AND 128MiB 3,3V 8-bit)
+2 NAND chips detected
+Fixed MDIO Bus: probed
+STMMAC driver:
+ platform registration... 
+ done!
+Set system config register 0x200300ec with value 0x003f003f
+                              ProcessID = 915
+ done!
+ DWMAC1000 - user ID: 0x10, Synopsys ID: 0x36
+ Enhanced descriptor structure
+MACADDR in get is 0:0:0:0:0:0
+ no valid MAC address for MAC 0;please, use ifconfig or nwhwconfig!
+ eth0 - (dev. name: stmmaceth - id: 0, IRQ #119
+ IO base addr: 0xc5980000)
+STMMAC MII Bus: probed
+eth0: PHY ID 00008201 at 1 IRQ -6 (1:01) active
+stmmac_reset: RESET COMPLETE!
+
+**************************************************
+*  HIGMACV300 driver built on Jan 24 2013 at 03:45:54
+**************************************************
+stmmac: Rx Checksum Offload Engine supported
+PPP generic driver version 2.4.2
+PPP Deflate Compression module registered
+PPP BSD Compression module registered
+PPP MPPE Compression module registered
+NET: Registered protocol family 24
+SLIP: version 0.8.4-NET3.019-NEWTTY (dynamic channels, max=256).
+CSLIP: code copyright 1989 Regents of the University of California.
+SLIP linefill/keepalive option.
+usbcore: registered new interface driver rt2500usb
+usbcore: registered new interface driver rt73usb
+usbmon: debugfs is not available
+ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+hiusb-ehci hiusb-ehci.0: HIUSB EHCI
+hiusb-ehci hiusb-ehci.0: new USB bus registered, assigned bus number 1
+hiusb-ehci hiusb-ehci.0: irq 63, io mem 0x100b0000
+hiusb-ehci hiusb-ehci.0: USB 0.0 started, EHCI 1.00
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 2 ports detected
+ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+hiusb-ohci hiusb-ohci.0: HIUSB OHCI
+hiusb-ohci hiusb-ohci.0: new USB bus registered, assigned bus number 2
+hiusb-ohci hiusb-ohci.0: irq 64, io mem 0x100a0000
+hub 2-0:1.0: USB hub found
+hub 2-0:1.0: 2 ports detected
+usbcore: registered new interface driver cdc_acm
+cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+usbcore: registered new interface driver cdc_wdm
+usbcore: registered new interface driver mdc800
+mdc800: v0.7.5 (30/10/2000):USB Driver for Mustek MDC800 Digital Camera
+usbcore: registered new interface driver usbserial
+ata1: SATA link down (SStatus 0 SControl 300)
+USB Serial support registered for generic
+usbcore: registered new interface driver usbserial_generic
+usbserial: USB Serial Driver core
+USB Serial support registered for GSM modem (1-port)
+usbcore: registered new interface driver option
+option: v0.7.2:USB Driver for GSM modems
+mousedev: PS/2 mouse device common for all mice
+i2c /dev entries driver
+usbcore: registered new interface driver usbhid
+usbhid: USB HID core driver
+TCP cubic registered
+Initializing XFRM netlink socket
+NET: Registered protocol family 17
+NET: Registered protocol family 15
+lib80211: common routines for IEEE802.11 drivers
+Registering the dns_resolver key type
+registered taskstats version 1
+ata2: SATA link up 1.5 Gbps (SStatus 113 SControl 300)
+ata2.00: ATA-6: ST3120827AS, 3.42, max UDMA/133
+ata2.00: 234441648 sectors, multi 0: LBA48 NCQ (depth 31/32)
+ata2.00: configured for UDMA/133
+scsi 1:0:0:0: Direct-AccessATA ST3120827AS 3.42 PQ: 0 ANSI: 5
+sd 1:0:0:0:[sda] 234441648 512-byte logical blocks: (120 GB/111 GiB)
+sd 1:0:0:0:[sda] Write Protect is off
+sd 1:0:0:0: Attached scsi generic sg0 type 0
+sd 1:0:0:0:[sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+ sda: sda1
+sd 1:0:0:0:[sda] Attached SCSI disk
+VFS: Mounted root (jffs2 filesystem) on device 31:2.
+Freeing init memory: 140K
+starting pid 542, tty '': '/etc/init.d/rcS'
+
+____  ______
+\ \  / / /  ___/| |
+ \ \/ /  | |___ | |
+  }  {   \___  \  _  | |
+ / /\ \   ___| | | |_| |
+/_/  \_\ /_____/ \_____/
+
+Rootfs Version : rootfs_dn8316_v0402
+
+[RCS]: /etc/init.d/S00devs
+mknod: /dev/null: File exists
+mknod: /dev/console: File exists
+mknod: /dev/ttyAMA0: File exists
+mknod: /dev/ttyAMA1: File exists
+mknod: /dev/ttyS000: File exists
+[RCS]: /etc/init.d/S01udev
+Initializing USB Mass Storage driver...
+usbcore: registered new interface driver usb-storage
+USB Mass Storage support registered.
+udevd (567): /proc/567/oom_adj is deprecated, please use /proc/567/oom_score_adj instead.
+MACADDR in set is 00:11:22:33:44:55
+/etc/init.d/S01udev: line 41: can't create /sys/block/sdb/queue/scheduler: nonexistent directory
+/etc/init.d/S01udev: line 42: can't create /sys/block/sdc/queue/scheduler: nonexistent directory
+/etc/init.d/S01udev: line 43: can't create /sys/block/sdd/queue/scheduler: nonexistent directory
+/etc/init.d/S01udev: line 44: can't create /sys/block/sde/queue/scheduler: nonexistent directory
+/etc/init.d/S01udev: line 45: can't create /sys/block/sdf/queue/scheduler: nonexistent directory
+/etc/init.d/S01udev: line 46: can't create /sys/block/sdg/queue/scheduler: nonexistent directory
+/etc/init.d/S01udev: line 47: can't create /sys/block/sdh/queue/scheduler: nonexistent directory
+/etc/init.d/S01udev: line 48: can't create /sys/block/sdi/queue/scheduler: nonexistent directory
+/etc/init.d/S01udev: line 49: can't create /sys/block/sdj/queue/scheduler: nonexistent directory
+autostart 1
+mount mtdblock on /mnt/app
+run application&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+Hisilicon Media Memory Zone Manager
+hi3520A_base: module license 'Proprietary' taints kernel.
+Disabling lock debugging due to kernel taint
+Hisilicon UMAP device driver interface: v3.00
+load sys.ko for Hi3520A...OK!
+Load tde.ko ...OK!
+load venc.ko for Hi3520A...OK!
+load group.ko for Hi3520A...OK!
+load chnl.ko for Hi3520A...OK!
+load h264e.ko for Hi3520A...OK!
+load rc.ko ....OK!
+load jpege.ko for Hi3520A...OK!
+load vou.ko ....OK!
+load vpss.ko ....OK!
+load vda.ko ....OK!
+load region.ko ....OK!
+load vdec.ko ....OK
+load vhd firmware.ko OK
+load hdmi.ko ....OK!
+Load jpeg6b.ko success.(SDK_VERSION:[jpeg6bv1.0] Build Time:[Jan 22 2013, 11:17:13])
+XSJ I2C-1 loaded
+Decoder Checked Ok:U24
+Decoder Checked Error:U26,0xffff!!!
+Decoder Norm:NTSC, Res:CIF, Chips:1
+PHY: 1:01 - Link is Up - 100/Full
+XSJ keypad driver init successful!
+XSJ_IRDA-MF @Hi3520v100R001_C_0_2_0 2010-04-20 13:52:28
+xsj-ir: init ok. ver=Mar  3 2013, 22:33:20.
+[XSJ35xx MUX Device Driver Ver. 0.9] 2010-04-10
+RTC Checked Ok
+[XSJ35xx MAIN Device Driver Ver. 1.0 2010/04/10]
+xsj_reg registered
+at88sc driver init successful!
+starting pid 916, tty '/dev/ttyS000': '/sbin/getty /dev/ttyS000 115200'
+XSJ35xx Main Device Driver Open...
+XSJ35xx MUX Device Driver Open...
+==============================================
+name= libfdisk
+version = 1.0.0
+date= 20090716
+==============================================
+==============================================
+name= libXSJApi
+version = 1.0.5
+info= XSJ_Common_API_library
+==============================================
+Firmware Version = az5bixg.0309.0.4.1.30326
+**********  START Application  **********
+APP. VERSION= az5bixg.0309.0.4.1.30326
+RAMDISK VERSION= 
+COMPILED  = 21:49:48 Mar 26 2013
+For XSJ
+MAX_CAMERA_CHANNEL = 16
+MAX_AUDIO_CHANNEL  = 8
+MAX_SENSOR_CHANNEL = 8
+ProcessID = 915
+*****************************************
+[misc/watchdog.c:110] Start S/W Watchdog ...
+[misc/eeprom.c:143] Config's size Info : EEPROM:11701 : RAM:11701
+[misc/eeprom.c:153] CRC value : 920338440
+[main.c:1015] OK. Loavideo format change NTSC
+d Config data from EEPROM.
+Firmware Version = az5bixg.0309.0.4.1.30326
+[misc/eeprom.c:271] WRITE Video Format to EEPROM : 0
+[misc/eeprom.c:258] WRITE VGA Resolution to EEPROM : 0
+[set_system_time] 2000/01/01 00/27/01
+[codec/codec_interface.c:159] =================================================
+[codec/codec_interface.c:160]   codec parameter
+[codec/codec_interface.c:161] =================================================
+[codec/codec_interface.c:162]  video= NTSC
+[codec/codec_interface.c:163]res  = CIF
+[codec/codec_interface.c:164] gop  = 50
+[codec/codec_interface.c:165]vi frame rate = 30
+[codec/codec_interface.c:169]ch= 1, fps=10, bps=1556, aud=0
+[codec/codec_interface.c:169]ch= 2, fps=10, bps=1556, aud=0
+[codec/codec_interface.c:169]ch= 3, fps=10, bps=1556, aud=0
+[codec/codec_interface.c:169]ch= 4, fps=25, bps=1556, aud=0
+[codec/codec_interface.c:169]ch= 5, fps=25, bps=1556, aud=0
+[codec/codec_interface.c:169]ch= 6, fps=10, bps=1556, aud=0
+[codec/codec_interface.c:169]ch= 7, fps=25, bps=1556, aud=0
+[codec/codec_interface.c:169]ch= 8, fps=25, bps=1556, aud=0
+[codec/codec_interface.c:169]ch= 9, fps=25, bps=1556, aud=0
+[codec/codec_interface.c:169]ch=10, fps=25, bps=1556, aud=0
+[codec/codec_interface.c:169]ch=11, fps=25, bps=1556, aud=0
+[codec/codec_interface.c:169] ch=12, fps=25, bps=1556, aud=0
+[codec/codec_interface.c:169]ch=13, fps=25, bps=1556, aud=0
+[codec/codec_interface.c:169]ch=14, fps=25, bps=1556, aud=0
+[codec/codec_interface.c:169]ch=15, fps=25, bps=1556, aud=0
+[codec/codec_interface.c:169]ch=16, fps=25, bps=1556, aud=0
+[codec/codec_interface.c:169]ch=17, fps= 0, bps=1556, aud=3
+[codec/codec_interface.c:171] =================================================
+  NTSC
+ Pool 0 hasn't mapped!
+[h264en : Sub Queue Start]
+[codec/codec_interface.c:310] ==== Encoder Init ====
+[codec/codec_interface.c:466] xsj35xx encoder on
+ ===========================================
+_aenc_proc loop : 915
+ ===========================================
+===========================================
+_enc_proc loop : 915 
+   ===========================================
+  InitVGAOsd ok
+[mouse/mouse_evt.c:194] TRY. Init PS2 Mouse
+[main.c:306] ERROR. Init PS2 Mouse... Retry
+[io/sensor.c:61] ======================================================
+[io/sensor.c:62]Sensor Type Info = 0x0000
+[io/sensor.c:63] ======================================================
+[xsj_util.c:983] ==============================================
+[xsj_util.c:984]  EXEC COMMAND = ls -l /sys/block/sda > /etc/dev.lst
+[xsj_util.c:985] ==============================================
+
+(none) login:[xsj_disk.c:1278] /dev/sda1 : NOT MOUNTED.
+[xsj_disk.c:1278] /dev/sdb1 : NOT MOUNTED.
+[xsj_disk.c:1278] /dev/sdc1 : NOT MOUNTED.
+[xsj_disk.c:1278] /dev/sdd1 : NOT MOUNTED.
+[xsj_disk.c:1278] /dev/sde1 : NOT MOUNTED.
+[xsj_disk.c:1278] /dev/sdf1 : NOT MOUNTED.
+[xsj_disk.c:1278] /dev/sdg1 : NOT MOUNTED.
+[xsj_disk.c:1278] /dev/sdh1 : NOT MOUNTED.
+[xsj_util.c:983] ==============================================
+[xsj_util.c:984]   EXEC COMMAND = ls -l /sys/block/sda > /etc/dev.lst
+[xsj_util.c:985] ==============================================
+[engine/diskman/diskman.c:2215] base->curr_disk_flag = 0x1
+[xsj_disk.c:591] ====Read HDD[/dev/sda] info====
+[xsj_disk.c:696] Serial number : 7KS08MXP, Length = 8
+[engine/diskman/diskman.c:2237] base->curr_disk_flag = 0x1
+[engine/diskman/diskman.c:4418] InitDiskManager = 0x1
+[engine/diskman/diskman.c:1982] ============== DISK FLAG = 0x1
+[engineEXT3-fs: barriers not enabled
+/diskman/diskman.c:2003] disk count = 1
+[xsj_disk.c:1769] swap = 0
+[xsj_disk.c:1778] HDD CHECK : SATA-HDD 01(0)
+   kjournald starting.  Commit interval 5 seconds
+EXT3-fs (sda1): using internal journal
+EXT3-fs (sda1): recovery complete
+EXT3-fs (sda1): mounted filesystem with ordered data mode
+[xsj_disk.c:1218] /dev/sda1 : Mounted at /mnt/sda1(ext3).
+[xsj_disk.c:1800] HDD NOT INSTALLED : SATA-HDD 02.
+[xsj_disk.c:1800] HDD NOT INSTALLED : SATA-HDD 03.
+[xsj_disk.c:1800] HDD NOT INSTALLED : SATA-HDD 04.
+[xsj_disk.c:1800] HDD NOT INSTALLED : SATA-HDD 05.
+[xsj_disk.c:1800] HDD NOT INSTALLED : SATA-HDD 06.
+[xsj_disk.c:1800] HDD NOT INSTALLED : SATA-HDD 07.
+[xsj_disk.c:1800] HDD NOT INSTALLED : SATA-HDD 08.
+[xsj_disk.c:1810] SATA-HDD CHECK : 0
+[engine/diskman/diskman.c:2476] ============== HDD COUNT : 1
+[engine/diskman/diskman.c:1616] opendir path = /mnt/sda1
+[xsj_disk.c:392] RETURN SIZE : 107539
+[engine/diskman/diskman.c:1784] ============== diskid = 0 =============
+[engine/diskman/diskman.c:1785]diskinfo->stream_full_count   = 26
+[engine/diskman/diskman.c:1786]diskinfo->stream_dirty_count  = 27
+[engine/diskman/diskman.c:1787]diskinfo->stream_cnt = 27
+[engine/diskman/diskman.c:1788]diskinfo->dirty = 1
+[engine/diskman/diskman.c:1789]diskinfo->full= 0
+[engine/diskman/diskman.c:1790] ========================================
+[engine/diskman/diskman.c:788] OK. TI fsck is OK
+[engine/diskman/fileman.c:2772] *********** consistency checking **************
+[engine/diskman/fileman.c:2843][diskid = 0] dirty stream fileid
+[engine/diskman/fileman.c:2859] dirty stream file count = 27
+[engine/diskman/fileman.c:2860] =============> rewrite index file <=============
+[engine/diskman/fileman.c:2861][TI]  first=0, next=963
+[engine/diskman/fileman.c:2862][EI]  first=0, next=399
+[engine/diskman/fileman.c:2863][IFI] first=0, next=9728
+[engine/diskman/fileman.c:2694] >>>>[time]Re-write count :963, first:0 => next:963
+[engine/diskman/fileman.c:2694] >>>>[iframe]Re-write count :9728, first:0 => next:9728
+[engine/diskman/fileman.c:2694] >>>>[event]Re-write count :399, first:0 => next:399
+[engine/diskman/fileman.c:2870] *********** End Indexfile Consistency Checking **************
+[xsj_disk.c:392] RETURN SIZE : 114435
+[engine/diskman/diskman.c:1146] 
+RECOVER TIMEINDEX IS NEEDED : HDD 00.
+[engine/diskman/diskman.c:1161] FOUND FIRST_INDEX : 918
+[engine/diskman/diskman.c:1169] 
+   RECOVER IFRAME-INDEX IS NEEDED : HDD 00.
+[engine/diskman/diskman.c:1181] >>>PREPARE IFRAME INDEX RECOVERY>>>>>>
+
+[engine/diskman/diskman.c:1182] FILE:/mnt/sda1/iframeindex.avx
+[engine/diskman/diskman.c:1183] TARGET FILE ID:26
+[engine/diskman/fileman.c:2117] FIRST IDX:0, NEXT IDX:9728
+[engine/diskman/fileman.c:2140] >>>>FOUND CUR FILE START IDX:8159
+[engine/diskman/diskman.c:1191] FOUND START RECOVERY IFRAME INDEX : 8159
+[engine/diskman/diskman.c:1197] 
+RECOVER EVENT-INDEX IS NEEDED : HDD 00.
+[engine/diskman/diskman.c:1206] >>>PREPARE EVENT INDEX RECOVERY>>>>>>
+
+[engine/diskman/diskman.c:1207] FILE:/mnt/sda1/eventindex.avx
+[engine/diskman/diskman.c:1208] TARGET FILE ID:26
+[engine/diskman/diskman.c:1211] <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+[engine/diskman/diskman.c:1226] RECOVERING STREAM FILE 26 ON DISK 00
+   ==find_eindex_by_fileid===============================================
+[engine/diskman/fileman.c:2205] FIRST IDX:0, NEXT IDX:399
+[engine/diskman/fileman.c:2244] >>>>FOUND CUR FILE START IDX:395
+===>Reliable :0, nextStreamPos:74281761
+[engine/diskman/fileman.c:1036] === RECOVERING : /mnt/sda1/stream0026.avs
+----------<Index Recovery Info>------------
+ >>File ID:26
+>>Time   index: nFirstIndex:0, nNextIndex:917
+  >>IFrame index: nFirstIndex:0, nNextIndex:8159
+ >>Event  index: nFirstIndex:0, nNextIndex:395
+  -------------------------------------------size:56
+ >>RECOVERY:: EVENT_FORCE_OFF[ch:0, type:2, flg:2]=====
+[last time] 2016/06/14 16/52/44
+[curr time] 2016/06/14 16/50/31
+[engine/diskman/fileman.c:1340] EOSF FOUND...
+[Start Time] 2016/06/14 18/45/53
+[End   Time] 2016/06/14 19/08/25
+[engine/diskman/fileman.c:1389] >>FLUSH EVENT INDEX: 1------
+[engine/diskman/fileman.c:1398] COMPLETE RECOVER ---- nNextStreamPos = 74281761
+[engine/diskman/fileman.c:1410] ------ nNextStreamPos : 74281761
+[engine/diskman/fileman.c:1411] ------ stream_cnt : 73035
+[engine/diskman/fileman.c:1431] STREAMFILE RECOVER OK : /mnt/sda1/stream0026.avs
+[engine/diskman/diskman.c:1616] opendir path = /mnt/sda1
+[xsj_disk.c:392] RETURN SIZE : 107539
+[engine/diskman/diskman.c:1784] ============== diskid = 0 =============
+[engine/diskman/diskman.c:1785]diskinfo->stream_full_count   = 26
+[engine/diskman/diskman.c:1786]diskinfo->stream_dirty_count  = 27
+[engine/diskman/diskman.c:1787]diskinfo->stream_cnt = 27
+[engine/diskman/diskman.c:1788]diskinfo->dirty = 1
+[engine/diskman/diskman.c:1789]diskinfo->full= 0
+[engine/diskman/diskman.c:1790] ========================================
+[engine/diskman/diskman.c:4422] base.curr_disk_flag = 0x1
+[engine/diskman/diskman.c:3879] valid 0 : 1465551533 : 946685870
+[engine/diskman/diskman.c:3912] no record data disk count = 0
+[engine/diskman/diskman.c:3934] 1. 0 diskid 0 946685870
+[engine/diskman/diskman.c:3934] 1. 1 diskid -1 -1
+[engine/diskman/diskman.c:3934] 1. 2 diskid -1 -1
+[engine/diskman/diskman.c:3934] 1. 3 diskid -1 -1
+[engine/diskman/diskman.c:3934] 1. 4 diskid -1 -1
+[engine/diskman/diskman.c:3934] 1. 5 diskid -1 -1
+[engine/diskman/diskman.c:3934] 1. 6 diskid -1 -1
+[engine/diskman/diskman.c:3934] 1. 7 diskid -1 -1
+[engine/diskman/diskman.c:3936] 
+[engine/diskman/diskman.c:3952] descending by last record time
+[engine/diskman/diskman.c:3955]diskid 0 946685870
+[engine/diskman/diskman.c:3955]diskid -1 -1
+[engine/diskman/diskman.c:3955]diskid -1 -1
+[engine/diskman/diskman.c:3955]diskid -1 -1
+[engine/diskman/diskman.c:3955]diskid -1 -1
+[engine/diskman/diskman.c:3955]diskid -1 -1
+[engine/diskman/diskman.c:3955]diskid -1 -1
+[engine/diskman/diskman.c:3955]diskid -1 -1
+[engine/diskman/diskman.c:3957] 
+[engine/diskman/diskman.c:3960] lately recorded diskid = 0
+[engine/diskman/diskman.c:4030] 11. 0 : 0 disk : 1465551533 : 946685870
+[engine/diskman/diskman.c:4030] 11. 1 : -1 disk : -1 : -1
+[engine/diskman/diskman.c:4030] 11. 2 : -1 disk : -1 : -1
+[engine/diskman/diskman.c:4030] 11. 3 : -1 disk : -1 : -1
+[engine/diskman/diskman.c:4030] 11. 4 : -1 disk : -1 : -1
+[engine/diskman/diskman.c:4030] 11. 5 : -1 disk : -1 : -1
+[engine/diskman/diskman.c:4030] 11. 6 : -1 disk : -1 : -1
+[engine/diskman/diskman.c:4030] 11. 7 : -1 disk : -1 : -1
+[engine/diskman/diskman.c:4032] 
+[engine/diskman/diskman.c:4055] 22. 0 : 0 disk : 1465551533 : 946685870
+[engine/diskman/diskman.c:4055] 22. 1 : -1 disk : -1 : -1
+[engine/diskman/diskman.c:4055] 22. 2 : -1 disk : -1 : -1
+[engine/diskman/diskman.c:4055] 22. 3 : -1 disk : -1 : -1
+[engine/diskman/diskman.c:4055] 22. 4 : -1 disk : -1 : -1
+[engine/diskman/diskman.c:4055] 22. 5 : -1 disk : -1 : -1
+[engine/diskman/diskman.c:4055] 22. 6 : -1 disk : -1 : -1
+[engine/diskman/diskman.c:4055] 22. 7 : -1 disk : -1 : -1
+[engine/diskman/diskman.c:4057] 
+[engine/diskman/diskman.c:4076][order : 1][0 disk][first rectime : 1465551533][last rectime : 946685870]
+[engine/diskman/diskman.c:4076][order : 2][-1 disk][first rectime : -1][last rectime : -1]
+[engine/diskman/diskman.c:4076][order : 3][-1 disk][first rectime : -1][last rectime : -1]
+[engine/diskman/diskman.c:4076][order : 4][-1 disk][first rectime : -1][last rectime : -1]
+[engine/diskman/diskman.c:4076][order : 5][-1 disk][first rectime : -1][last rectime : -1]
+[engine/diskman/diskman.c:4076][order : 6][-1 disk][first rectime : -1][last rectime : -1]
+[engine/diskman/diskman.c:4076][order : 7][-1 disk][first rectime : -1][last rectime : -1]
+[engine/diskman/diskman.c:4076][order : 8][-1 disk][first rectime : -1][last rectime : -1]
+[engine/diskman/diskman.c:4078] 
+[engine/diskman/diskman.c:4102] s_hdd_order.order[0] = 0
+[engine/diskman/diskman.c:4102] s_hdd_order.order[1] = -1
+[engine/diskman/diskman.c:4102] s_hdd_order.order[2] = -1
+[engine/diskman/diskman.c:4102] s_hdd_order.order[3] = -1
+[engine/diskman/diskman.c:4102] s_hdd_order.order[4] = -1
+[engine/diskman/diskman.c:4102] s_hdd_order.order[5] = -1
+[engine/diskman/diskman.c:4102] s_hdd_order.order[6] = -1
+[engine/diskman/diskman.c:4102] s_hdd_order.order[7] = -1
+[engine/diskman/diskman.c:4107] dirty_disk_count=1, full_disk_count=0, disk_count=1
+ ================== Disk Order Info ==================
+   disk order =  0  -1  -1  -1  -1  -1  -1  -1
+disk flag = 0x1
+ work disk = 0  
+=====================================================
+[engine/diskman/diskman.c:4299] ---------------------------------------
+[engine/diskman/diskman.c:4300] set_recorded_diskid_last : last disk =0
+[engine/diskman/diskman.c:4301] ---------------------------------------
+[engine/diskman/diskman.c:4261] ---------------------------------------
+[engine/diskman/diskman.c:4262]set_recorded_diskid_first : first disk =0
+[engine/diskman/diskman.c:4263] ---------------------------------------
+[main.c:1112] OK. Init Disk Manager.
+[io/buzzer.c:316] OK. Create Thread : Buzzer
+[misc/eeprom.c:271] WRITE Video Format to EEPROM : 0
+[misc/eeprom.c:258] WRITE VGA Resolution to EEPROM : 0
+[misc/eeprom.c:297] WRITE Resolution to EEPROM : 6
+[mux/motion.c:397] Init Motion ....
+[mux/motion.c:435]- Init / Set Motion Info
+[When Create recorder, TimeIndexHeader...]0x3310::0x601::first=0::next=963
+[engine/record/write_timeindex.c:165] Open TimeIndexFile. Path = /mnt/sda1/timeindex.avx
+[open timeindex file : timeindexheader]0x3310::0x601::first=0::next=963
+[open timeindex file : curr timeindex]nDiskID=0::nFileID=26::nOffset=73812359::fChannelFlag=0x100::2000/01/01 00/17/50
+[engine/record/recorder.c:164] ====> Prev diskid=0, fileid=0
+[engine/record/recorder.c:165] ====> Curr diskid=0, fileid=26
+[engine/record/recorder.c:237] fileid=26 : open and read sfh
+[ SFH]0x3300::0x601::d_1::r_0::f_0::74281761
+[engine/record/recorder.c:93] fileid=26 : update_streamfile_header
+[ SFH]0x3300::0x601::d_1::r_0::f_0::74281761
+[engine/record/recorder.c:291] Open StreamFile :
+[engine/record/recorder.c:292] Path = /mnt/sda1/stream0026.avs
+[engine/record/recorder.c:293] nNextStreamPos = 74281761
+[engine/record/recorder.c:294] Time index First  idx  = 0, Next idx = 963
+[engine/record/recorder.c:295] Iframe index First idx = 0, Next idx = 9728
+[engine/record/recorder.c:296] Event index First idx  = 0, Next idx = 399
+[engine/record/recorder.c:302] ==> 5.start time. sec=946686425. usec=330837
+[engine/record/recorder.c:302] ==> 5.end   time. sec=946686425. usec=331357
+
+[engine/record/scheduler.c:58] ========== update schedule ==========
+[engine/record/scheduler.c:83] ch 0 : SCHED_MOTION[2]
+[engine/record/scheduler.c:83] ch 1 : SCHED_MOTION[2]
+[engine/record/scheduler.c:83] ch 2 : SCHED_MOTION[2]
+[engine/record/scheduler.c:83] ch 3 : SCHED_MOTION[2]
+[engine/record/scheduler.c:83] ch 4 : SCHED_MOTION[2]
+[engine/record/scheduler.c:83] ch 5 : SCHED_MOTION[2]
+[engine/record/scheduler.c:83] ch 6 : SCHED_ALWAYS[1]
+[engine/record/scheduler.c:83] ch 7 : SCHED_ALWAYS[1]
+[engine/record/scheduler.c:83] ch 8 : SCHED_ALWAYS[1]
+[engine/record/scheduler.c:83] ch 9 : SCHED_ALWAYS[1]
+[engine/record/scheduler.c:83] ch 10 : SCHED_ALWAYS[1]
+[engine/record/scheduler.c:83] ch 11 : SCHED_ALWAYS[1]
+[engine/record/scheduler.c:83] ch 12 : SCHED_NOREC[0]
+[engine/record/scheduler.c:83] ch 13 : SCHED_ALWAYS[1]
+[engine/record/scheduler.c:83] ch 14 : SCHED_NOREC[0]
+[engine/record/scheduler.c:83] ch 15 : SCHED_NOREC[0]
+[engine/network/network_queu.c:156] >>>>>> Create New NetQueue: client:0 <<<<<<
+[engine/record/recman.c:248] =========================================
+[engine/record/recman.c:249] Enable Pre-Event Recording...
+[engine/record/recman.c:250] =========================================
+[engine/diskman/diskman.c:3784] 
+[last record fsh]0x1ff:cs= 37:ch= 6:res=6:len=95:plen=95:skip= 0:vl=11:al=0:alk=0:fps=25:vop=0:bl=0:br=16:sec=946685885:msec= 11:iidx=9727:tidx=962
+[last record fsh's time] 2000/01/01 00/18/05
+[last record ti]nDiskID=0::nFileID=26::nOffset=73812359::fChannelFlag=0x100::2000/01/01 00/17/50
+[last record ti's  time] 2000/01/01 00/17/50
+[engine/record/recman.c:1477] OK. All channel record mode info is udpated
+[engine/record/recman.c:1479]always = 0 : motion = 0 : sensor = 0 : off = 0
+[engine/record/recman.c:1168] =====================================================
+[engine/record/recman.c:1169] pre-fshlength of last recorded field = 95
+[engine/record/recman.c:1170] =====================================================
+[misc/eeprom.c:271] WRITE Video Format to EEPROM : 0
+[misc/eeprom.c:258] WRITE VGA Resolution to EEPROM : 0
+[misc/eeprom.c:297] WRITE Resolution to EEPROM : 6
+[engine/record/recman.c:1189] ====> End : start_record_manager
+[engine/record/recman.c:959] ===========================================
+[engine/record/recman.c:960] record loop : 915
+[engine/record/recman.c:961] ===========================================
+[xsj_util.c:983] ==============================================
+[xsj_util.c:984] EXEC COMMAND = ifconfig eth0 down
+[xsj_util.c:985] ==============================================
+[time_ti ] 2000/01/01 00/17/50
+[time_fsh] 2000/01/01 00/27/05
+[TI]nDiskID=0::nFileID=26::nOffset=74281761::fChannelFlag=0x40::2000/01/01 00/27/05
+[TIH]0x3310::0x601::first=0::next=964
+[IFIH]0x3330::0x601::first=0::next=9728
+
+[xsj_util.c:983] ==============================================
+[xsj_util.c:984] EXEC COMMAND = ifconfig eth0 hw ether 00:11:22:33:44:55
+[xsj_util.c:985] ==============================================
+[xsj_util.c:983] ==============================================
+[xsj_util.c:984]EXEC COMMAND = ifconfig eth0 up
+[xsj_util.c:985] ==============================================
+MACADDR in set is 00:11:22:33:44:55
+[xsj_util.c:983] ==============================================
+[xsj_util.c:984]EXEC COMMAND = ifconfig eth0 | grep HWaddr
+[xsj_util.c:985] ==============================================
+eth0 Link encap:Ethernet  HWaddr 00:11:22:33:44:55  
+PHY: 1:01 - Link is Up - 100/Full
+[xsj_util.c:983] ==============================================
+[xsj_util.c:984]EXEC COMMAND = ps | grep "udhcpc" > /tmp/ps.lst
+[xsj_util.c:985] ==============================================
+[xsj_util.c:983] ==============================================
+[xsj_util.c:984]   EXEC COMMAND = rm -f /tmp/ps.lst
+[xsj_util.c:985] ==============================================
+[xsj_util.c:983] ==============================================
+[xsj_util.c:984]  EXEC COMMAND = udhcpc --script=/etc/dhclient.script &
+[xsj_util.c:985] ==============================================
+ udhcpc (v1.16.1) started
+Sending discover...
+Sending select for 192.168.1.10...
+Lease of 192.168.1.10 obtained, lease time 600
+deleting routers
+route: SIOCDELRT: No such process
+adding dns 192.168.1.1
+[engine/network/network_main.c:3725] OK NET PORT(TCP:9000/0)
+[engine/network/network_main.c:1582] OK MOBILE PORT(TCP:15961/0)
+[engine/network/network_main.c:1597] OK HTTP WEB PORT(TCP:90/0)
+   ===========================================
+  net_thread_main loop : 915 
+ ===========================================
+[email.c:825]Email Stop, since not Enable or Email Setup Error!
+[ftp.c:379]FTP Start
+ ===========================================
+ Timer Handler loop : 915 
+  ===========================================
+  ===========================================
+ StartDVR loop : 915  
+ ===========================================
+[engine/record/record_thread.c:498] =========> force flush by no record!
+[ftp.c:129]FTP read err
+[ftp.c:770]FTP Login failed!
+[ftp.c:647]FTP Logout!
+[ftp.c:129]FTP read err
+[ftp.c:770]FTP Login failed!
+[ftp.c:647]FTP Logout!
+[ftp.c:129]FTP read err
+[ftp.c:770]FTP Login failed!
+[ftp.c:647]FTP Logout!
+[engine/network/network_main.c:3063]ERROR INIT SERVER SEND SOCK
+
